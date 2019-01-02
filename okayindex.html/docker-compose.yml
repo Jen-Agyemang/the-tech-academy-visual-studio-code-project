@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  okayindex.html:
+    image: ${DOCKER_REGISTRY-}okayindexhtml
+    build:
+      context: .\okayindex.html
+      dockerfile: Dockerfile
